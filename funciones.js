@@ -13,8 +13,8 @@ function guardar(){
             document.getElementById("estadosalud").value="";
             document.getElementById("medicamentos").value="";
             document.getElementById("estadosalud").focus();
-        }
-    }
+        }
+    }
 
 function register() {
     var username = document.getElementById("username").value;
