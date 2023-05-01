@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="index.css">
     <meta charset="uft-8">
 </head>
+
 <body>
     <header>
         <div class="contenedor">
@@ -19,132 +21,166 @@
             </nav>
         </div>
     </header>
-    
+
     <section id="hero">
         <h1>Historial clínico</h1>
     </section>
 
     <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <h1>Registro de usuario</h1>
-    <form>
-      <label for="username">Nombre de usuario:</label>
-      <input type="text" id="username" name="username" required>
-      <label for="password">Contraseña:</label>
-      <input type="password" id="password" name="password" required>
-      <button type="button" onclick="register()">Registrarse</button>
-    </form>
-    <script src="Entrada.js"></script>
-    
-    <section id="Historial"></section>
+    </head>
+
+    <body>
+        <h1>Registro de usuario</h1>
+        <form id="formulario">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Registrarse</button>
+        </form>
+
+        <script src="./Persistencia.js"></script>
+
+        <section id="Historial"></section>
         <div class="contenedor">
 
-        <div class="img-contenedor"></div>
+            <div class="img-contenedor"></div>
             <h2>Sobre su salud</h2>
-            <p>En estos apartados el paciente podrá consignar su actividad de salud a diario, sobre como se ha sentido, si ha tenido un malestar, si ha tomado una pastilla o medicamento de cualquier tipo, si este realmente le funciono o no, también a su vez con base a la información acerca de la actividad de salud consignada por el usuario, el aplicativo o versión web generara un reporte semanal con todas las fluctuaciones de la semana, la cual puede ser descargada o enviada al médico, si así el paciente lo quiere. También podrá llevar el registro de los medicamentos que no puede tomar o que con base a su historial en un pasado o no le han servido de absolutamente nada, o incluso que pueda llegar a ser nocivo para su salud.</p>
+            <p>En estos apartados el paciente podrá consignar su actividad de salud a diario, sobre como se ha sentido,
+                si ha tenido un malestar, si ha tomado una pastilla o medicamento de cualquier tipo, si este realmente
+                le funciono o no, también a su vez con base a la información acerca de la actividad de salud consignada
+                por el usuario, el aplicativo o versión web generara un reporte semanal con todas las fluctuaciones de
+                la semana, la cual puede ser descargada o enviada al médico, si así el paciente lo quiere. También podrá
+                llevar el registro de los medicamentos que no puede tomar o que con base a su historial en un pasado o
+                no le han servido de absolutamente nada, o incluso que pueda llegar a ser nocivo para su salud.</p>
         </div>
-    </section>
+        </section>
 
         <section id="Sobre-Su-Salud">
             <div class="contenedor">
-            <div class="carta">
-            <h3>Su actividad de salud</h3>
-            <p>En estos apartados el paciente podrá consignar su actividad de salud a diario, sobre cómo se ha sentido, si ha tenido un malestar, si ha tomado una pastilla o medicamento de cualquier tipo, si este realmente le funciono o no. Y demás cosas referentes a su salud.</p>
-        <button>
-        <a href="file:///C:/Users/aleja/Documents/principios%20de%20desarrollo%20de%20software/paginaprincipios/pagina2.html">Aquí
-        </a>
-        </button>
-        
-        </div>
-        <div class="carta">
-            <h3>Reporte semanal</h3>
-            <p>En este apartado semanalmente el sistema generara para el usuario un reporte, sobre como se ha sentido en la semana y que de esa forma el doctor lo pueda visualizar.</p>
-            <button>
-                <a href="file:///C:/Users/aleja/Documents/principios%20de%20desarrollo%20de%20software/paginaprincipios/reporte.html">Aquí
-                </a>
-            </button>
-        </div>
-        <div class="carta">
-            <h3>Medicamentos</h3>
-            <p> En este apartado estarán consignados los medicamentos que para el paciente no están permitidos, ya sea porque le perjudican o no están autorizados.</p>
-            <button>
-                <a href="file:///C:/Users/aleja/Documents/principios%20de%20desarrollo%20de%20software/paginaprincipios/MedicamentosNo.html">Aquí
-                </a>
-            </button>
-        </div>
-    </div>
-</section>
+                <div class="carta">
+                    <h3>Su actividad de salud</h3>
+                    <p>En estos apartados el paciente podrá consignar su actividad de salud a diario, sobre cómo se ha
+                        sentido, si ha tenido un malestar, si ha tomado una pastilla o medicamento de cualquier tipo, si
+                        este realmente le funciono o no. Y demás cosas referentes a su salud.</p>
+                    <button>
+                        <a
+                            href="./pagina2.html">Aquí
+                        </a>
+                    </button>
+
+                </div>
+                <div class="carta">
+                    <h3>Reporte semanal</h3>
+                    <p>En este apartado semanalmente el sistema generara para el usuario un reporte, sobre como se ha
+                        sentido en la semana y que de esa forma el doctor lo pueda visualizar.</p>
+                    <button>
+                        <a
+                            href="./reporte.html">Aquí
+                        </a>
+                    </button>
+                </div>
+                <div class="carta">
+                    <h3>Medicamentos</h3>
+                    <p> En este apartado estarán consignados los medicamentos que para el paciente no están permitidos,
+                        ya sea porque le perjudican o no están autorizados.</p>
+                    <button>
+                        <a
+                            href="./MedicamentosNo.html">Aquí
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
 
 
-<div class="img-contenedor"></div>
-            <h2>Control de salud</h2>
-            <p>En estos apartados el doctor podrá interactuar directamente con el paciente, recetándole e indicándole, lo que debe y no debe tomar, y las demás recomendaciones del doctor.</p>
+        <div class="img-contenedor"></div>
+        <h2>Control de salud</h2>
+        <p>En estos apartados el doctor podrá interactuar directamente con el paciente, recetándole e indicándole, lo
+            que debe y no debe tomar, y las demás recomendaciones del doctor.</p>
         </div>
-    </section>
+        </section>
 
         <section id="control-salud">
             <div class="contenedor">
-            <div class="cartaa">
-            <h3>Indicaciones medicas</h3>
-            <p>Aquí el medico instruye el paciente para que tenga en cuenta durante el tiempo de algún tratamiento o medicamentos, las cosas que debe tomar en cuenta. Y demás.</p>
-            <button>
-                <a href="file:///C:/Users/aleja/Documents/principios%20de%20desarrollo%20de%20software/paginaprincipios/IndicacionesM.html">Aquí
-                </a>
-            </button>
-        </div>
-        <div class="cartaa">
-            <h3>Medicamentos</h3>
-            <p>Aquí estarán consignados lo medicamentos recetados por el doctor.</p>
-            <button>
-                <a href="file:///C:/Users/aleja/Documents/principios%20de%20desarrollo%20de%20software/paginaprincipios/Medicamentos.html">Aquí
-                </a>
-            </button>
-        </div>
-        <div class="cartaa">
-            <h3>Reporte para doctor</h3>
-            <p>En este medio podrá ser enviado el reporte al doctor, ya sea el reporte semanal y mensual al doctor, para que pueda hacer una valoración.</p>
-            <button>
-                <a href="file:///C:/Users/aleja/Documents/principios%20de%20desarrollo%20de%20software/paginaprincipios/ReporteD.html">Aquí
-                </a>
-            </button>
-        </div>
-    </div>
-</section>
+                <div class="cartaa">
+                    <h3>Indicaciones medicas</h3>
+                    <p>Aquí el medico instruye el paciente para que tenga en cuenta durante el tiempo de algún
+                        tratamiento o medicamentos, las cosas que debe tomar en cuenta. Y demás.</p>
+                    <button>
+                        <a
+                            href="./IndicacionesM.html">Aquí
+                        </a>
+                    </button>
+                </div>
+                <div class="cartaa">
+                    <h3>Medicamentos</h3>
+                    <p>Aquí estarán consignados lo medicamentos recetados por el doctor.</p>
+                    <button>
+                        <a
+                            href="./Medicamentos.html">Aquí
+                        </a>
+                    </button>
+                </div>
+                <div class="cartaa">
+                    <h3>Reporte para doctor</h3>
+                    <p>En este medio podrá ser enviado el reporte al doctor, ya sea el reporte semanal y mensual al
+                        doctor, para que pueda hacer una valoración.</p>
+                    <button>
+                        <a
+                            href="./ReporteD.html">Aquí
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
 
-<div class="img-contenedor"></div>
-            <h2>Herramientas saludables</h2>
-            <p>En estos apartados se encontrarán diferentes herramientas y utilidades de la web, a manera que la experiencia del paciente sea mas enriquecedora, pudiendo completar información y elementos que considere importantes. O que en dado caso lo necesite.</p>
+        <div class="img-contenedor"></div>
+        <h2>Herramientas saludables</h2>
+        <p>En estos apartados se encontrarán diferentes herramientas y utilidades de la web, a manera que la experiencia
+            del paciente sea mas enriquecedora, pudiendo completar información y elementos que considere importantes. O
+            que en dado caso lo necesite.</p>
         </div>
-    </section>
+        </section>
 
         <section id="Herramientas-1">
             <div class="contenedor">
-            <div class="cartaaa">
-            
-        </div>
-        <div class="cartaaa">
-            <h3>Medicamentos comunes</h3>
-            <p>Aquí se encontrará información básica de medicamentos comunes, que el cliente pueda requerir.</p>
-            <button>Aquí</button>
-        </div>
-        <div class="cartaaa">
-            <h3>Por comprar</h3>
-            <p>Aquí estarán los medicamentos que el cliente pueda estar requiriendo, ya sea porque se están acabando o porque han sido recetados por el doctor, y todavía no los ha comprado. Con su nivel de urgencia, cada uno.</p>
-            <button>
-                <a href="file:///C:/Users/aleja/Documents/principios%20de%20desarrollo%20de%20software/paginaprincipios/PorComprar.html">Aquí
-                </a>
-            </button>
-        </div>
-        <div class="cartaaa">
-            <h3>Información adicional</h3>
-            <p>Aquí estará la información adicional a la médica, que el paciente ingrese, que puede ser de utilidad para el usuario y para el médico. </p>
-            <button>
-                <a href="file:///C:/Users/aleja/Documents/principios%20de%20desarrollo%20de%20software/paginaprincipios/InfoAd.html">Aquí
-                </a>
-            </button>
-    </div>
-</section>
-      
-</body>
+                <div class="cartaaa">
+
+                </div>
+                <div class="cartaaa">
+                    <h3>Medicamentos comunes</h3>
+                    <p>Aquí se encontrará información básica de medicamentos comunes, que el cliente pueda requerir.</p>
+                    <button>
+                         <a
+                            href="./MedicamentosComunes.html">Aquí
+                         </a>
+                    </button>
+                </div>
+                <div class="cartaaa">
+                    <h3>Por comprar</h3>
+                    <p>Aquí estarán los medicamentos que el cliente pueda estar requiriendo, ya sea porque se están
+                        acabando o porque han sido recetados por el doctor, y todavía no los ha comprado. Con su nivel
+                        de urgencia, cada uno.</p>
+                    <button>
+                        <a
+                            href="./PorComprar.html">Aquí
+                        </a>
+                    </button>
+                </div>
+                <div class="cartaaa">
+                    <h3>Información adicional</h3>
+                    <p>Aquí estará la información adicional a la médica, que el paciente ingrese, que puede ser de
+                        utilidad para el usuario y para el médico. </p>
+                    <button>
+                        <a
+                            href="./InfoAd.html">Aquí
+                        </a>
+                    </button>
+                </div>
+        </section>
+
+    </body>
+    
+
 </html>

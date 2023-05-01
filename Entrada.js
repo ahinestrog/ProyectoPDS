@@ -1,114 +1,136 @@
-class Entrada{
-    constructor(){
-        
-    }
+
+const formulario = document.querySelector("#formulario")
+
+// Se crea el JSON para almacenar los usuarios.
+const estadossaludJSON = {
+  estadossalud: []
 }
 
+formulario.addEventListener("submit", (e) => {
+  e.preventDefault()
 
-function guardar(){
-    var basedatos=document.getElementById("estadosalud").value;
-    var medicamentos=document.getElementById("medicamentos").value;
-    if (basedatos=="") {
-        alert("La informaion de su actividad de salud es obligatoria ingresarla");
-        document.getElementById("estadosalud").focus();
-    }else{
-        if (medicamentos=="") {
-            alert("La informaion de sus medicamentos es obligatoria ingresarla");
-            document.getElementById("medicamentos").focus();
-        }else{
-            console.log(basedatos +" "+medicamentos);
-            document.getElementById("estadosalud").value="";
-            document.getElementById("medicamentos").value="";
-            document.getElementById("estadosalud").focus();
-        }
-    }
+  const estadosalud = {
+    saludhoy: formulario.elements['estadossalud'].value,
+  }
+
+  estadossaludJSON.estadossalud.push(estadosalud)
+
+  alert("registrado con éxito la actividad de salud")
+  console.log(estadossaludJSON.estadossalud);
+});
+
+window.addEventListener("beforeunload", function() {
+  // Guardar el JSON de manera local (en el navegador) para que aún si se cierra la ventana los usuarios queden guardados.
+  const estadossaludActualizadosJSON = JSON.stringify(estadossaludJSON)
+  localStorage.setItem("estadossalud", estadossaludActualizadosJSON)
+});
+
+const formulario2 = document.querySelector("#formulario")
+
+// Se crea el JSON para almacenar los usuarios.
+const estadosanimoJSON = {
+  estadosanimo: []
 }
 
-function register(){
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    if (username=="") {
-        alert("La informaion de su actividad de su usuario es obligatoria ingresarla");
-        document.getElementById("username").focus();
-    }else{
-        if (password=="") {
-            alert("La informaion de su contraseña es obligatoria ingresarla");
-            document.getElementById("password").focus();
-        }else{
-            console.log(username +" "+password);
-            document.getElementById("username").value="";
-            document.getElementById("password").value="";
-            document.getElementById("username").focus();
-        }
-    }
+formulario2.addEventListener("submit", (e) => {
+  e.preventDefault()
+
+  const estadoanimo = {
+    animohoy: formulario.elements['animohoy'].value,
+  }
+
+  estadosanimoJSON.estadosanimo.push(estadoanimo)
+
+  alert("registrado con éxito la actividad de salud")
+  console.log(estadosanimoJSON.estadosanimo);
+});
+
+window.addEventListener("beforeunload", function() {
+  // Guardar el JSON de manera local (en el navegador) para que aún si se cierra la ventana los usuarios queden guardados.
+  const estadosanimoActualizadosJSON = JSON.stringify(estadosanimoJSON)
+  localStorage.setItem("estadosanimo", estadosanimoActualizadosJSON)
+});
+
+
+const formulario3 = document.querySelector("#formulario")
+
+// Se crea el JSON para almacenar los usuarios.
+const PadecimientosUJSON = {
+  PadecimientosU: []
 }
 
-function EstadoAnimo(){
-    var EstadoAnimo=document.getElementById("EstadoAnimo").value;
-    if (EstadoAnimo=="") {
-        alert("La informaion de su estado de ánimo es obligatoria ingresarla");
-        document.getElementById("EstadoAnimo").focus();
-    }else{
-            console.log(EstadoAnimo);
-            document.getElementById("EstadoAnimo").value="";
-            document.getElementById("EstadoAnimo").focus(); 
-        }
+formulario3.addEventListener("submit", (e) => {
+  e.preventDefault()
+
+  const PadecimientoU = {
+    Padecimientos: formulario.elements['Padecimientos'].value,
+  }
+
+  PadecimientosUJSON.PadecimientosU.push(PadecimientoU) 
+
+  alert("registrado con éxito la actividad de salud")
+  console.log(PadecimientosUJSON.PadecimientosU);
+});
+
+window.addEventListener("beforeunload", function() {
+  // Guardar el JSON de manera local (en el navegador) para que aún si se cierra la ventana los usuarios queden guardados.
+  const PadecimientosUActualizadosJSON = JSON.stringify(PadecimientosUJSON)
+  localStorage.setItem("PadecimientosU", PadecimientosUActualizadosJSON)
+});
+
+
+const formulario4 = document.querySelector("#formulario")
+
+// Se crea el JSON para almacenar los usuarios.
+const comidasJSON = {
+  comidas: []
 }
 
-function PadecimientosU(){
-    var Entrada=document.getElementById("PadecimientosU").value;
-    if (PadecimientosU=="") {
-        alert("La informaion de sus padecimientos es obligatoria ingresarla");
-        document.getElementById("PadecimientosU").focus();
-    }else{
-            console.log(Entrada);
-            document.getElementById("PadecimientosU").value="";
-            document.getElementById("PadecimientosU").focus(); 
-        }
+formulario4.addEventListener("submit", (e) => {
+  e.preventDefault()
+
+  const  comida = {
+    animohoy: formulario.elements['comida'].value,
+  }
+
+  comidasJSON.comidas.push(comida)
+
+  alert("registrado con éxito la actividad de salud")
+  console.log(comidasJSON.comidas);
+});
+
+window.addEventListener("beforeunload", function() {
+  // Guardar el JSON de manera local (en el navegador) para que aún si se cierra la ventana los usuarios queden guardados.
+  const comidasActualizadosJSON = JSON.stringify(comidasJSON)
+  localStorage.setItem("comidas", comidasActualizadosJSON)
+});
+
+
+const formulario5 = document.querySelector("#formulario")
+
+// Se crea el JSON para almacenar los usuarios.
+const mpdcJSON = {
+  mdpc: []
 }
 
-function guardar(){
-    var basedatos=document.getElementById("estadosalud").value;
-    var medicamentos=document.getElementById("medicamentos").value;
-    if (basedatos=="") {
-        alert("La informaion de su actividad de salud es obligatoria ingresarla");
-        document.getElementById("estadosalud").focus();
-    }else{
-        if (medicamentos=="") {
-            alert("La informaion de sus medicamentos es obligatoria ingresarla");
-            document.getElementById("medicamentos").focus();
-        }else{
-            console.log(basedatos +" "+medicamentos);
-            document.getElementById("estadosalud").value="";
-            document.getElementById("medicamentos").value="";
-            document.getElementById("estadosalud").focus();
-        }
-    }
-}
+formulario5.addEventListener("submit", (e) => {
+  e.preventDefault()
 
-function Comidas(){
-    var Comidas=document.getElementById("Comidas").value;
-    if (Comidas=="") {
-        alert("La informaion de sus comidas es obligatoria ingresarla");
-        document.getElementById("Comidas").focus();
-    }else{
-            console.log(Comidas);
-            document.getElementById("Comidas").value="";
-            document.getElementById("Comidas").focus(); 
-        }
-}
+  const mdp = {
+    medicamentos: formulario.elements['Medicamentos pendientes'].value,
+  }
 
-function mpdc(){
-    var mpdc=document.getElementById("mpdc").value;
-    if (mpdc=="") {
-        alert("La informaion de sus medicamentos pendientes de compra es obligatoria ingresarla");
-        document.getElementById("mpdc").focus();
-    }else{
-            console.log(Comidas);
-            document.getElementById("mpdc").value="";
-            document.getElementById("mpdc").focus(); 
-        }
-}
+  mpdcJSON.mpdc.push(mdp)
+
+  alert("registrado con éxito la actividad de salud")
+  console.log(mpdcJSON.mdpc);
+});
+
+window.addEventListener("beforeunload", function() {
+  // Guardar el JSON de manera local (en el navegador) para que aún si se cierra la ventana los usuarios queden guardados.
+  const mpdcActualizadosJSON = JSON.stringify(mpdcJSON)
+  localStorage.setItem("medicamentosCompra", mpdcActualizadosJSON)
+});
 
 
 

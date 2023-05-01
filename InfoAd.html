@@ -8,27 +8,31 @@
 </head>
 <body>
     <h1>Información Adicional</h1>
-    <form>
+    <form id="formulario3">
         <h1>Padecimientos:</h1>
         <input type="text" name="estadosalud" id="estadosalud" placeholder="Digite su estado de salud el dia de hoy" size="100"><br>
         <input type="text" name="medicamentos" id="medicamentos" placeholder="Digite los medicamentos que consumio el dia de hoy" size="100"><br>
-        <button type="button" onclick="PadecimientosU()">Guardar</button>
     </form>
-    
-    <br>   
-    <br>
-    <script type="text/JAVASCRIPT" src="Entrada.js"></script>
+
+    <script src="./Entrada.js"></script>
 
     <h1>Comidas diarias</h1>
-<form>
-    <input type="text" name="Desayuno" id="estadosalud" placeholder="Digite que comió en el desayuno" size="100"><br>
-    <input type="text" name="Almuerzo" id="medicamentos" placeholder="Digite que comió en el almuerzo" size="100"><br>
-    <input type="text" name="Cena" id="medicamentos" placeholder="Digite que comió en la cena" size="100"><br>
-    <button type="button" onclick="comidas()">Guardar</button>
+    <form id="formulario4">
+    <input type="text" name="Desayuno" id="Desayuno" placeholder="Digite que comió en el desayuno" size="100"><br>
+    <input type="text" name="Almuerzo" id="Almuerzo" placeholder="Digite que comió en el almuerzo" size="100"><br>
+    <input type="text" name="Cena" id="Cena" placeholder="Digite que comió en la cena" size="100"><br>
+    <button type="submit">Guardar</button>
+    </form>
 
-    <br>   
-    <br>
-    <script type="text/JAVASCRIPT" src="Entrada.js"></script>
-</form>
+    <script src="./Entrada.js"></script>
+
+    <h1>Estado ánimo</h1>
+    <form id="formulario2">
+        <input type="text" name="Estado ánimo" id="Estado ánimo" placeholder="Digite cual fue su estado de ánimo hoy" size="100"><br>
+        <button type="submit">Guardar</button>
+    </form>
+    <script src="./Entrada.js"></script>
+
+    
 </body>
 </html>
